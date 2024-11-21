@@ -1,0 +1,26 @@
+---
+
+
+
+- name: "Instal depencies for imapsync via APT on host '{{ ansible_hostname }}'"
+  ansible.builtin.apt:
+    pkg: 
+    - git
+    - rcs
+    - make
+    - makepasswd
+    - cpanminus
+    - gcc
+    - libssl-dev
+    - libauthen-ntlm-perl
+    - libclass-load-perl
+    - libcrypt-ssleay-perl
+    - liburi-perl
+    - libdata-uniqid-perl
+    - libdigest-hmac-perl libdist-checkconflicts-perl \
+     libfile-copy-recursive-perl libio-compress-perl libio-socket-inet6-perl \
+     libio-socket-ssl-perl libio-tee-perl libmail-imapclient-perl \
+     libmodule-scandeps-perl libnet-ssleay-perl libpar-packer-perl \
+     libreadonly-perl libsys-meminfo-perl libterm-readkey-perl \
+     libtest-fatal-perl libtest-mock-guard-perl libtest-pod-perl \
+     libtest-requires-perl libtest-simple-perl libunicode-string-perl
